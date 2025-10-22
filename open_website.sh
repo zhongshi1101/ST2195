@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo "🚀 Jack Zhang's Portfolio Website"
+echo "=================================="
+echo ""
+echo "网站文件已准备就绪！"
+echo ""
+echo "📍 访问方法："
+echo ""
+echo "1. 使用本地服务器："
+echo "   http://localhost:8080"
+echo "   http://127.0.0.1:8080"
+echo ""
+echo "2. 使用IP地址："
+echo "   http://172.30.0.2:8080"
+echo ""
+echo "3. 直接打开文件："
+echo "   双击 index.html 文件"
+echo ""
+echo "4. 浏览器地址栏输入："
+echo "   file://$(pwd)/index.html"
+echo ""
+echo "💡 如果还是无法访问，请检查："
+echo "   - 防火墙设置"
+echo "   - 浏览器安全设置"
+echo "   - 尝试不同的浏览器"
+echo ""
+echo "📁 当前文件位置：$(pwd)"
+echo ""
+echo "🌟 网站特色："
+echo "   ✅ 现代化设计"
+echo "   ✅ 响应式布局"
+echo "   ✅ 动画效果"
+echo "   ✅ 交互功能"
+echo ""
+
+# 尝试检查服务器状态
+if curl -s http://localhost:8080 > /dev/null; then
+    echo "✅ 服务器运行正常！"
+else
+    echo "❌ 服务器连接失败，请尝试直接打开 index.html 文件"
+fi
